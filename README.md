@@ -50,14 +50,10 @@ No complex build step or dependency installation is required!
    git clone https://github.com/seljanzeynalovacode/FetchApi_GitHubProfileSearcher.git
 ```
 
-2. **Navigate into the project directory:**
-
-```bash
-   cd github-inspector
-```
-
-3. **Open the application:**
+2. **Open the application:**
    - Simply open `index.html` in your favorite web browser, or use the **Live Server** extension in Visual Studio Code.
+
+---
 
 ## 🔌 API Endpoints Used
 

@@ -1,6 +1,6 @@
 # 🚀 GitHub Inspector Pro
 
-A modern, highly responsive, and visually appealing web application built with **Vanilla JavaScript (ES6+)**, **Fetch API**, and **Bootstrap 5**. This application leverages the **GitHub REST API** to inspect any user profile, explore their public repositories, followers, and following lists in real-time.
+A modern, highly responsive, and visually appealing web application built with **Vanilla JavaScript (ES6+)**, **Fetch API**, and **Bootstrap 5**. This application leverages the **GitHub REST API** and dynamic contribution chart services to inspect any user profile, explore their public repositories, followers, following lists, and annual contribution activity in real-time.
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
@@ -13,10 +13,11 @@ A modern, highly responsive, and visually appealing web application built with *
 ## ✨ Features
 
 - 🔍 **Real-time User Search:** Instantly fetch and display any valid GitHub profile details.
+- 📊 **Annual Contribution Heatmap:** Live 1-year GitHub activity chart generated dynamically for searched users.
 - 🎨 **Glassmorphism & Modern UI:** Designed with vibrant gradients, soft shadows, custom cards, and smooth CSS transitions.
 - 📦 **Interactive Repository Explorer:** View the latest updated repositories along with star counts (`⭐`) and quick-access links.
 - 👥 **Network Inspector:** Effortlessly toggle between **Followers** and **Following** lists with interactive profile triggers.
-- 📱 **Fully Responsive:** Seamlessly optimized for Mobile, Tablet, and Desktop screens.
+- 📱 **Fully Responsive:** Seamlessly optimized for Mobile, Tablet, and Desktop screens (with horizontal scrolling support for charts on mobile).
 - ⚡ **Asynchronous Data Handling:** Clean error management, loading spinners, and robust `async/await` Fetch API integration.
 
 ---
@@ -26,7 +27,9 @@ A modern, highly responsive, and visually appealing web application built with *
 - **Frontend:** HTML5, CSS3 (Custom Variables & Modern Flexbox/Grid)
 - **Framework:** [Bootstrap 5](https://getbootstrap.com/)
 - **Typography:** [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans) (Google Fonts)
-- **API:** [GitHub REST API v3](https://docs.github.com/en/rest)
+- **APIs & Services:** 
+  - [GitHub REST API v3](https://docs.github.com/en/rest)
+  - [ghchart](https://ghchart.rshah.org/) (SVG Contribution Graph Service)
 
 ---
 
@@ -63,6 +66,7 @@ This project fetches data from the following public GitHub REST API endpoints:
 - **Repositories:** `GET https://api.github.com/users/{username}/repos?sort=updated&per_page=10`
 - **Followers:** `GET https://api.github.com/users/{username}/followers?per_page=10`
 - **Following:** `GET https://api.github.com/users/{username}/following?per_page=10`
+- **Contribution Graph:** `GET https://ghchart.rshah.org/{username}`
 ---
 ## 🤝 Contributing
 

@@ -47,7 +47,7 @@ No complex build step or dependency installation is required!
 1. **Clone the repository:**
 
 ```bash
-   git clone https://github.com/YOUR_USERNAME/github-inspector.git
+   git clone https://github.com/seljanzeynalovacode/FetchApi_GitHubProfileSearcher.git
 ```
 
 2. **Navigate into the project directory:**

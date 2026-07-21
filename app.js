@@ -56,6 +56,19 @@ async function getUserProfile(username) {
         document.getElementById('followersCount').innerText = data.followers;
         document.getElementById('followingCount').innerText = data.following;
 
+
+        // ... profil məlumatlarını doldurduğun hissə ...
+document.getElementById('reposCount').innerText = data.public_repos;
+document.getElementById('followersCount').innerText = data.followers;
+document.getElementById('followingCount').innerText = data.following;
+
+// 🟢 YENİ ƏLAVƏ: Contribution şəklinin src-sini dinamik təyin edirik
+// Orijinal GitHub yaşıl rəngi üçün:
+document.getElementById('contributionGraph').src = `https://ghchart.rshah.org/${data.login}`;
+
+// QEYD: Əgər dördbucaqlıların rəngini layihən kimi bənövşəyi etmək istəsən, HEX kod yaza bilərsən:
+// document.getElementById('contributionGraph').src = `https://ghchart.rshah.org/8b5cf6/${data.login}`;
+
         card.classList.remove('d-none');
 
         // İlk açılışda avtomatik olaraq repolarını gətiririk

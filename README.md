@@ -8,7 +8,7 @@ A modern, highly responsive, and visually appealing web application built with *
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap_5-7952B3?style=flat&logo=bootstrap&logoColor=white)
 
----
+--- 
 
 ## ✨ Features
 

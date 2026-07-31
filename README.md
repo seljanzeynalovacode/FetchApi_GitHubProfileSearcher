@@ -1,5 +1,5 @@
 # 🚀 GitHub Inspector Pro
-  
+   
 A modern, highly responsive, and visually appealing web application built with **Vanilla JavaScript (ES6+)**, **Fetch API**, and **Bootstrap 5**. This application leverages the **GitHub REST API** and dynamic contribution chart services to inspect any user profile, explore their public repositories, followers, following lists, and annual contribution activity in real-time.
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
